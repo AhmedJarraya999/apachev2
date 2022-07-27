@@ -5,7 +5,7 @@ ap_extra_software:
 - python3
 - git
 
-ap_http_host_dir: "creators_by_heart"
+ap_http_host_dir: "my_dir"
 ap_http_conf_file: creators_by_heart_dev.conf
 ap_disable_default: true
 ap_http_port: "8080"
