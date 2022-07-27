@@ -1,0 +1,5 @@
+### execution of the role i've already created installation and configuration of apache for debian and res hat hosts
+
+- hosts: dbservers
+  roles:
+    - role: "myapache"
