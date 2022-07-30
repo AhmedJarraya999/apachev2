@@ -6,7 +6,7 @@
   register: result
 - name: "print the list of packages"
   debug:
-     msg: "{{ result }}" 
+     msg: "{{ result.stdout }}" 
 
 #- name: "display the content of result variable"  
 #  debug:
