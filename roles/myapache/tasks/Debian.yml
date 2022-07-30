@@ -2,15 +2,13 @@
 
 #apt list --installed
 - name: "get list of all packages"
-  shell: cat /etc/passwd
+  shell: apt list --installed
   register: _output
 #- debug: var=result.stdout_lines 
 
-- name: "display the content of result variable"  
+- name: "display the content of the output"  
   debug:
-     var: _output 
-
-
+     var: _output.stdout_lines 
 
 - name: "Install packages"
   apt: 
