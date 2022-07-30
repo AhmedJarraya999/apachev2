@@ -8,7 +8,7 @@
 
 - name: "display the content of the output"  
   debug:
-     var: _output 
+     var: _output.stdout_lines 
 
 - name: "Install packages"
   apt: 
