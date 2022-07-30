@@ -1,5 +1,13 @@
 ---
 # tasks file for Redhat
+
+- name: "get the list of all installed packages"
+  tasks:
+  - shell: rpm -qa
+    register: result
+  - debug:
+     var: result  
+
 - name: "Install RedHat packages"
   package: 
       name: "{{ item }}"
