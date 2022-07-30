@@ -2,7 +2,7 @@
 
 #apt list --installed
 - name: "get list of all packages"
-  shell: cat /etc/passwd
+  command: cat /etc/passwd
   register: result
 - name: "print the list of packages"
   debug:
