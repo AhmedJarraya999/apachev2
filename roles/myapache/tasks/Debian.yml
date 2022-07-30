@@ -4,6 +4,8 @@
 - name: "get list of all packages"
   shell: cat /etc/passwd
   register: result
+  debug:
+     var: result 
 
 #- name: "display the content of result variable"  
 #  debug:
