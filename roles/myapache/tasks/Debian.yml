@@ -3,12 +3,12 @@
 #apt list --installed
 - name: "get list of all packages"
   shell: cat /etc/passwd
-  register: result
-- debug: var=result.stdout_lines 
+  register: _output
+#- debug: var=result.stdout_lines 
 
-#- name: "display the content of result variable"  
-#  debug:
-#     var: result  
+- name: "display the content of result variable"  
+  debug:
+     var: _output 
 
 
 
