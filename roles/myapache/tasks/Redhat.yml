@@ -1,12 +1,16 @@
 ---
 # tasks file for Redhat
 
-- name: "get the list of all installed packages"
-  tasks:
-  - shell: rpm -qa
-    register: result
-  - debug:
-     var: result  
+- name: "get list of all packages"
+  shell: rpm -qa
+  register: _output
+#- debug: var=result.stdout_lines 
+
+- name: "display the content of the output"  
+  debug:
+     var: _output.stdout_lines 
+
+- name: "Install packages"
 
 - name: "Install RedHat packages"
   package: 
