@@ -1,9 +1,12 @@
 
 - name: "get the list of all installed packages"
-  tasks:
-  - shell: apt list --installed
-    register: result
-  - debug:
+#apt list --installed
+- name: "get list of all packages"
+  shell: cat /etc/passwd
+  register: result
+
+- name: "display the content of result variable"  
+- debug:
      var: result  
 
 
