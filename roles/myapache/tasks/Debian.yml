@@ -1,11 +1,10 @@
 
 - name: "get the list of all installed packages"
-  shell: apt list --installed
-  #tasks:
-  #- shell: apt list --installed
-   # register: result
-  #- debug:
-   #  var: result  
+  tasks:
+  - shell: apt list --installed
+    register: result
+  - debug:
+     var: result  
 
 
 
