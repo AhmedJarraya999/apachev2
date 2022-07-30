@@ -1,10 +1,10 @@
 ### execution of the role i've already created installation and configuration of apache for debian and res hat hosts
 
 - hosts: dbservers
-  vars_prompt:
-    - name: response-update
-      prompt: Do you want to update the package?
-      private: no
+  #vars_prompt:
+   # - name: response-update
+    #  prompt: Do you want to update the package?
+     # private: no
   roles:
     - role: "myapache"
       become: yes
