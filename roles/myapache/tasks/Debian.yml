@@ -19,13 +19,13 @@
   - "apache2"
   - "{{ ap_extra_software }}"     
 
-- name: "prompt the value"
-  vars_prompt: 
-     -  name: response
-        prompt: " you have the version x do you want to update  to y  "       
-- name: "print" 
-  debug: 
-   msg:  "your response is {{ response }}"
+#- name: "prompt the value"
+#  vars_prompt: 
+#     -  name: response
+#        prompt: " you have the version x do you want to update  to y  "       
+#- name: "print" 
+#  debug: 
+#   msg:  "your response is {{ response }}"
 
 
 
